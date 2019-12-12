@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #fff;
+  color: #222;
+}
+
+.tour {
+  background: #ececec;
+  margin: 2rem 0;
+}
+
+.tour img {
+  width: 100%;
+  display: block;
+  min-height: 13rem;
+}
+
+.img-container {
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  display: block;
+  top: 5%;
+  right: 5%;
+  color: #82b340;
+  font-size: 2rem;
+  cursor: pointer;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  opacity: 0;
+}
+
+.img-container:hover .close-btn {
+  opacity: 1;
+}
+
+.tour-info {
+  padding: 1rem .5rem;
+}
+
+.tour-info h3 {
+  text-transform: uppercase;
+  color: #82b340;
+}
+
+.tour-info h4 {
+  text-transform: capitalize;
+  margin: .2rem 0 .6rem 0;
+}
+
+.tour-info h5 {
+  text-transform: capitalize;
+}
+
+.tour-info h5 span {
+  color: #82b340;
+  margin: .5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .tour {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 3fr;
+        grid-template-columns: 2fr 3fr;
+    grid-column-gap: 1rem;
+  }
+}
+/*# sourceMappingURL=Tour.css.map */
